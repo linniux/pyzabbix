@@ -3,12 +3,12 @@ from pyzabbix import ZabbixAPI,ZabbixAPIException
 
 import sys
 
-ZABBIX_SERVER = 'http://10.16.18.5'
+ZABBIX_SERVER = 'http://1.1.1.1'
 
 def main():
 
     autonavi_zabbix_api = ZabbixAPI(ZABBIX_SERVER)
-    autonavi_zabbix_api.login('wangzhiqian','wangzhiqian')
+    autonavi_zabbix_api.login('asdf','asdf')
     print "Connected to Zabbix API Version %s" % autonavi_zabbix_api.api_version()
 
     host_name = 'aes'
