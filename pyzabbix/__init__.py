@@ -65,7 +65,9 @@ class ZabbixAPI(object):
         if self.use_authenticate:
             self.auth = self.user.authenticate(user=user, password=password)
         else:
+            #type unicode 
             self.auth = self.user.login(user=user, password=password)
+            
 
     def confimport(self, format='', source='', rules=''):
         """Alias for configuration.import because it clashes with
