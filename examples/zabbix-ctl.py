@@ -41,7 +41,7 @@ class AutoNaviZabbix(object):
 
 if __name__ == '__main__':
     ZABBIX_SERVER = 'http://10.16.18.5'
-    t = AutoNaviZabbix(ZABBIX_SERVER,'wangzhiqian','wangzhiqian')
+    t = AutoNaviZabbix(ZABBIX_SERVER,'user','pwd')
     
     
     hosts = t.list_host_by_groupid('213')
